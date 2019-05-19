@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name SF17020F-0302-21R-L-015)(type Legacy)(uri /Users/mmora/Dev/PedalBoard/LIB_SF17020F-0302-21R-L-015/SF17020F-0302-21R-L-015.lib)(options "")(descr ""))
+  (lib (name PedalBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/PedalBoard-rescue.lib)(options "")(descr ""))
+)

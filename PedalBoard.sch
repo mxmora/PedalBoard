@@ -1,0 +1,696 @@
+EESchema Schematic File Version 4
+LIBS:PedalBoard-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SF17020F-0302-21R-L-015:SF17020F-0302-21R-L-015 S1
+U 1 1 5CDDE643
+P 3850 950
+F 0 "S1" H 4250 1215 50  0000 C CNN
+F 1 "SF17020F-0302-21R-L-015" H 4250 1124 50  0000 C CNN
+F 2 "SF17020F-0302-21R-L-015:SF17020F030221RL015" H 4500 1050 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/SF17020F-0302-21R-L-015.pdf" H 4500 950 50  0001 L CNN
+F 4 "Pushbutton Switches 3PDT STOMP/FOOT SW LATCHING 1A9VDC 9PIN" H 4500 850 50  0001 L CNN "Description"
+F 5 "41.2" H 4500 750 50  0001 L CNN "Height"
+F 6 "107-SF17020F-32-21RL" H 4500 650 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=107-SF17020F-32-21RL" H 4500 550 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Alpha (Taiwan)" H 4500 450 50  0001 L CNN "Manufacturer_Name"
+F 9 "SF17020F-0302-21R-L-015" H 4500 350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3850 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5CDDF04D
+P 9950 1250
+F 0 "#FLG01" H 9950 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 9950 1423 50  0000 C CNN
+F 2 "" H 9950 1250 50  0001 C CNN
+F 3 "~" H 9950 1250 50  0001 C CNN
+	1    9950 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5CDDF4B8
+P 10400 1250
+F 0 "#PWR03" H 10400 1000 50  0001 C CNN
+F 1 "GND" H 10405 1077 50  0000 C CNN
+F 2 "" H 10400 1250 50  0001 C CNN
+F 3 "" H 10400 1250 50  0001 C CNN
+	1    10400 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR02
+U 1 1 5CDDFB07
+P 9950 1100
+F 0 "#PWR02" H 9950 950 50  0001 C CNN
+F 1 "+9V" H 9965 1273 50  0000 C CNN
+F 2 "" H 9950 1100 50  0001 C CNN
+F 3 "" H 9950 1100 50  0001 C CNN
+	1    9950 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5CDE024C
+P 5850 950
+F 0 "D1" H 5843 1166 50  0000 C CNN
+F 1 "LED" H 5843 1075 50  0000 C CNN
+F 2 "LEDs:LED_Rectangular_W3.0mm_H2.0mm" H 5850 950 50  0001 C CNN
+F 3 "~" H 5850 950 50  0001 C CNN
+	1    5850 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CDE095C
+P 6350 950
+F 0 "R1" V 6143 950 50  0000 C CNN
+F 1 "1k" V 6234 950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6280 950 50  0001 C CNN
+F 3 "~" H 6350 950 50  0001 C CNN
+	1    6350 950 
+	0    1    1    0   
+$EndComp
+Text GLabel 2900 1050 0    50   Input ~ 0
+Input
+Text GLabel 2900 1400 0    50   Input ~ 0
+Ouput
+Text GLabel 2900 900  0    50   Input ~ 0
+ToEffect
+Text GLabel 2900 1250 0    50   Input ~ 0
+FromEffect
+Wire Wire Line
+	3850 1050 2900 1050
+Wire Wire Line
+	3850 950  3400 950 
+Wire Wire Line
+	3400 950  3400 900 
+Wire Wire Line
+	3400 900  2900 900 
+Wire Wire Line
+	3850 1150 3500 1150
+Wire Wire Line
+	3500 1150 3500 1750
+Wire Wire Line
+	5050 1750 5050 950 
+Wire Wire Line
+	5050 950  4650 950 
+Wire Wire Line
+	3850 1250 2900 1250
+Wire Wire Line
+	3850 1350 3400 1350
+Wire Wire Line
+	3400 1350 3400 1400
+Wire Wire Line
+	3400 1400 2900 1400
+$Comp
+L power:GND #PWR01
+U 1 1 5CDE8D43
+P 5550 1500
+F 0 "#PWR01" H 5550 1250 50  0001 C CNN
+F 1 "GND" H 5555 1327 50  0000 C CNN
+F 2 "" H 5550 1500 50  0001 C CNN
+F 3 "" H 5550 1500 50  0001 C CNN
+	1    5550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5CDE93FE
+P 10400 1100
+F 0 "#FLG02" H 10400 1175 50  0001 C CNN
+F 1 "PWR_FLAG" H 10400 1273 50  0000 C CNN
+F 2 "" H 10400 1100 50  0001 C CNN
+F 3 "~" H 10400 1100 50  0001 C CNN
+	1    10400 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 1100 10400 1250
+Wire Wire Line
+	9950 1100 9950 1250
+Wire Wire Line
+	5400 950  5700 950 
+Wire Wire Line
+	4650 1050 5400 1050
+Wire Wire Line
+	5400 1050 5400 950 
+Wire Wire Line
+	4650 1150 5550 1150
+Wire Wire Line
+	5550 1150 5550 1500
+Wire Wire Line
+	6000 950  6200 950 
+Wire Wire Line
+	6500 950  6900 950 
+NoConn ~ 4650 1250
+Wire Wire Line
+	3500 1750 5050 1750
+Text GLabel 7550 1250 0    50   Input ~ 0
+ToEffect
+Text GLabel 7550 1350 0    50   Input ~ 0
+Input
+Text GLabel 7550 1450 0    50   Input ~ 0
+FromEffect
+Text GLabel 7550 1550 0    50   Input ~ 0
+Ouput
+Wire Wire Line
+	7550 1250 7750 1250
+Wire Wire Line
+	7750 1350 7550 1350
+Wire Wire Line
+	7750 1450 7550 1450
+Wire Wire Line
+	7750 1550 7550 1550
+Connection ~ 5550 1150
+NoConn ~ 3850 6350
+NoConn ~ 3900 6300
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 5CDE179D
+P 7950 1550
+F 0 "J1" H 7922 1432 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 7922 1523 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Vertical" H 7950 1550 50  0001 C CNN
+F 3 "~" H 7950 1550 50  0001 C CNN
+	1    7950 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 1150 5900 1750
+Wire Wire Line
+	5550 1150 5900 1150
+Wire Wire Line
+	6900 950  6900 1650
+Wire Wire Line
+	6900 1650 7750 1650
+Wire Wire Line
+	5900 1750 7750 1750
+$Comp
+L SF17020F-0302-21R-L-015:SF17020F-0302-21R-L-015 S?
+U 1 1 5CE20D4F
+P 3900 2150
+F 0 "S?" H 4300 2415 50  0000 C CNN
+F 1 "SF17020F-0302-21R-L-015" H 4300 2324 50  0000 C CNN
+F 2 "SF17020F-0302-21R-L-015:SF17020F030221RL015" H 4550 2250 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/SF17020F-0302-21R-L-015.pdf" H 4550 2150 50  0001 L CNN
+F 4 "Pushbutton Switches 3PDT STOMP/FOOT SW LATCHING 1A9VDC 9PIN" H 4550 2050 50  0001 L CNN "Description"
+F 5 "41.2" H 4550 1950 50  0001 L CNN "Height"
+F 6 "107-SF17020F-32-21RL" H 4550 1850 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=107-SF17020F-32-21RL" H 4550 1750 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Alpha (Taiwan)" H 4550 1650 50  0001 L CNN "Manufacturer_Name"
+F 9 "SF17020F-0302-21R-L-015" H 4550 1550 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5CE20D59
+P 5900 2150
+F 0 "D?" H 5893 2366 50  0000 C CNN
+F 1 "LED" H 5893 2275 50  0000 C CNN
+F 2 "LEDs:LED_Rectangular_W3.0mm_H2.0mm" H 5900 2150 50  0001 C CNN
+F 3 "~" H 5900 2150 50  0001 C CNN
+	1    5900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CE20D63
+P 6400 2150
+F 0 "R?" V 6193 2150 50  0000 C CNN
+F 1 "1k" V 6284 2150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6330 2150 50  0001 C CNN
+F 3 "~" H 6400 2150 50  0001 C CNN
+	1    6400 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 2250 2950 2250
+Wire Wire Line
+	3900 2150 3450 2150
+Wire Wire Line
+	3450 2150 3450 2100
+Wire Wire Line
+	3450 2100 2950 2100
+Wire Wire Line
+	3900 2350 3550 2350
+Wire Wire Line
+	3550 2350 3550 2950
+Wire Wire Line
+	5100 2950 5100 2150
+Wire Wire Line
+	5100 2150 4700 2150
+Wire Wire Line
+	3900 2450 2950 2450
+Wire Wire Line
+	3900 2550 3450 2550
+Wire Wire Line
+	3450 2550 3450 2600
+Wire Wire Line
+	3450 2600 2950 2600
+$Comp
+L power:GND #PWR?
+U 1 1 5CE20D79
+P 5600 2700
+F 0 "#PWR?" H 5600 2450 50  0001 C CNN
+F 1 "GND" H 5605 2527 50  0000 C CNN
+F 2 "" H 5600 2700 50  0001 C CNN
+F 3 "" H 5600 2700 50  0001 C CNN
+	1    5600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2150 5750 2150
+Wire Wire Line
+	4700 2250 5450 2250
+Wire Wire Line
+	5450 2250 5450 2150
+Wire Wire Line
+	4700 2350 5600 2350
+Wire Wire Line
+	5600 2350 5600 2700
+Wire Wire Line
+	6050 2150 6250 2150
+Wire Wire Line
+	6550 2150 6950 2150
+NoConn ~ 4700 2450
+Wire Wire Line
+	3550 2950 5100 2950
+Connection ~ 5600 2350
+Wire Wire Line
+	5950 2350 5950 2950
+Wire Wire Line
+	5600 2350 5950 2350
+Wire Wire Line
+	5950 2950 7800 2950
+$Comp
+L SF17020F-0302-21R-L-015:SF17020F-0302-21R-L-015 S?
+U 1 1 5CE26F15
+P 3900 3300
+F 0 "S?" H 4300 3565 50  0000 C CNN
+F 1 "SF17020F-0302-21R-L-015" H 4300 3474 50  0000 C CNN
+F 2 "SF17020F-0302-21R-L-015:SF17020F030221RL015" H 4550 3400 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/SF17020F-0302-21R-L-015.pdf" H 4550 3300 50  0001 L CNN
+F 4 "Pushbutton Switches 3PDT STOMP/FOOT SW LATCHING 1A9VDC 9PIN" H 4550 3200 50  0001 L CNN "Description"
+F 5 "41.2" H 4550 3100 50  0001 L CNN "Height"
+F 6 "107-SF17020F-32-21RL" H 4550 3000 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=107-SF17020F-32-21RL" H 4550 2900 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Alpha (Taiwan)" H 4550 2800 50  0001 L CNN "Manufacturer_Name"
+F 9 "SF17020F-0302-21R-L-015" H 4550 2700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5CE26F1F
+P 5900 3300
+F 0 "D?" H 5893 3516 50  0000 C CNN
+F 1 "LED" H 5893 3425 50  0000 C CNN
+F 2 "LEDs:LED_Rectangular_W3.0mm_H2.0mm" H 5900 3300 50  0001 C CNN
+F 3 "~" H 5900 3300 50  0001 C CNN
+	1    5900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CE26F29
+P 6400 3300
+F 0 "R?" V 6193 3300 50  0000 C CNN
+F 1 "1k" V 6284 3300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6330 3300 50  0001 C CNN
+F 3 "~" H 6400 3300 50  0001 C CNN
+	1    6400 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 3400 2950 3400
+Wire Wire Line
+	3900 3300 3450 3300
+Wire Wire Line
+	3450 3300 3450 3250
+Wire Wire Line
+	3450 3250 2950 3250
+Wire Wire Line
+	3900 3500 3550 3500
+Wire Wire Line
+	3550 3500 3550 4100
+Wire Wire Line
+	5100 4100 5100 3300
+Wire Wire Line
+	5100 3300 4700 3300
+Wire Wire Line
+	3900 3600 2950 3600
+Wire Wire Line
+	3900 3700 3450 3700
+Wire Wire Line
+	3450 3700 3450 3750
+Wire Wire Line
+	3450 3750 2950 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5CE26F3F
+P 5600 3850
+F 0 "#PWR?" H 5600 3600 50  0001 C CNN
+F 1 "GND" H 5605 3677 50  0000 C CNN
+F 2 "" H 5600 3850 50  0001 C CNN
+F 3 "" H 5600 3850 50  0001 C CNN
+	1    5600 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3300 5750 3300
+Wire Wire Line
+	4700 3400 5450 3400
+Wire Wire Line
+	5450 3400 5450 3300
+Wire Wire Line
+	4700 3500 5600 3500
+Wire Wire Line
+	5600 3500 5600 3850
+Wire Wire Line
+	6050 3300 6250 3300
+Wire Wire Line
+	6550 3300 6950 3300
+NoConn ~ 4700 3600
+Wire Wire Line
+	3550 4100 5100 4100
+Connection ~ 5600 3500
+Wire Wire Line
+	5950 3500 5950 4100
+Wire Wire Line
+	5600 3500 5950 3500
+Wire Wire Line
+	5950 4100 7800 4100
+$Comp
+L SF17020F-0302-21R-L-015:SF17020F-0302-21R-L-015 S?
+U 1 1 5CE38EF8
+P 3950 4500
+F 0 "S?" H 4350 4765 50  0000 C CNN
+F 1 "SF17020F-0302-21R-L-015" H 4350 4674 50  0000 C CNN
+F 2 "SF17020F-0302-21R-L-015:SF17020F030221RL015" H 4600 4600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/SF17020F-0302-21R-L-015.pdf" H 4600 4500 50  0001 L CNN
+F 4 "Pushbutton Switches 3PDT STOMP/FOOT SW LATCHING 1A9VDC 9PIN" H 4600 4400 50  0001 L CNN "Description"
+F 5 "41.2" H 4600 4300 50  0001 L CNN "Height"
+F 6 "107-SF17020F-32-21RL" H 4600 4200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=107-SF17020F-32-21RL" H 4600 4100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Alpha (Taiwan)" H 4600 4000 50  0001 L CNN "Manufacturer_Name"
+F 9 "SF17020F-0302-21R-L-015" H 4600 3900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5CE38F02
+P 5950 4500
+F 0 "D?" H 5943 4716 50  0000 C CNN
+F 1 "LED" H 5943 4625 50  0000 C CNN
+F 2 "LEDs:LED_Rectangular_W3.0mm_H2.0mm" H 5950 4500 50  0001 C CNN
+F 3 "~" H 5950 4500 50  0001 C CNN
+	1    5950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CE38F0C
+P 6450 4500
+F 0 "R?" V 6243 4500 50  0000 C CNN
+F 1 "1k" V 6334 4500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6380 4500 50  0001 C CNN
+F 3 "~" H 6450 4500 50  0001 C CNN
+	1    6450 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 4600 3000 4600
+Wire Wire Line
+	3950 4500 3500 4500
+Wire Wire Line
+	3500 4500 3500 4450
+Wire Wire Line
+	3500 4450 3000 4450
+Wire Wire Line
+	3950 4700 3600 4700
+Wire Wire Line
+	3600 4700 3600 5300
+Wire Wire Line
+	5150 5300 5150 4500
+Wire Wire Line
+	5150 4500 4750 4500
+Wire Wire Line
+	3950 4800 3000 4800
+Wire Wire Line
+	3950 4900 3500 4900
+Wire Wire Line
+	3500 4900 3500 4950
+Wire Wire Line
+	3500 4950 3000 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5CE38F22
+P 5650 5050
+F 0 "#PWR?" H 5650 4800 50  0001 C CNN
+F 1 "GND" H 5655 4877 50  0000 C CNN
+F 2 "" H 5650 5050 50  0001 C CNN
+F 3 "" H 5650 5050 50  0001 C CNN
+	1    5650 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4500 5800 4500
+Wire Wire Line
+	4750 4600 5500 4600
+Wire Wire Line
+	5500 4600 5500 4500
+Wire Wire Line
+	4750 4700 5650 4700
+Wire Wire Line
+	5650 4700 5650 5050
+Wire Wire Line
+	6100 4500 6300 4500
+Wire Wire Line
+	6600 4500 7000 4500
+NoConn ~ 4750 4800
+Wire Wire Line
+	3600 5300 5150 5300
+Connection ~ 5650 4700
+Wire Wire Line
+	6000 4700 6000 5300
+Wire Wire Line
+	5650 4700 6000 4700
+Wire Wire Line
+	6000 5300 7850 5300
+$Comp
+L SF17020F-0302-21R-L-015:SF17020F-0302-21R-L-015 S?
+U 1 1 5CE38F3F
+P 3950 5650
+F 0 "S?" H 4350 5915 50  0000 C CNN
+F 1 "SF17020F-0302-21R-L-015" H 4350 5824 50  0000 C CNN
+F 2 "SF17020F-0302-21R-L-015:SF17020F030221RL015" H 4600 5750 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/SF17020F-0302-21R-L-015.pdf" H 4600 5650 50  0001 L CNN
+F 4 "Pushbutton Switches 3PDT STOMP/FOOT SW LATCHING 1A9VDC 9PIN" H 4600 5550 50  0001 L CNN "Description"
+F 5 "41.2" H 4600 5450 50  0001 L CNN "Height"
+F 6 "107-SF17020F-32-21RL" H 4600 5350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=107-SF17020F-32-21RL" H 4600 5250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Alpha (Taiwan)" H 4600 5150 50  0001 L CNN "Manufacturer_Name"
+F 9 "SF17020F-0302-21R-L-015" H 4600 5050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5CE38F49
+P 5950 5650
+F 0 "D?" H 5943 5866 50  0000 C CNN
+F 1 "LED" H 5943 5775 50  0000 C CNN
+F 2 "LEDs:LED_Rectangular_W3.0mm_H2.0mm" H 5950 5650 50  0001 C CNN
+F 3 "~" H 5950 5650 50  0001 C CNN
+	1    5950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CE38F53
+P 6450 5650
+F 0 "R?" V 6243 5650 50  0000 C CNN
+F 1 "1k" V 6334 5650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6380 5650 50  0001 C CNN
+F 3 "~" H 6450 5650 50  0001 C CNN
+	1    6450 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 5750 3000 5750
+Wire Wire Line
+	3950 5650 3500 5650
+Wire Wire Line
+	3500 5650 3500 5600
+Wire Wire Line
+	3500 5600 3000 5600
+Wire Wire Line
+	3950 5850 3600 5850
+Wire Wire Line
+	3600 5850 3600 6450
+Wire Wire Line
+	5150 6450 5150 5650
+Wire Wire Line
+	5150 5650 4750 5650
+Wire Wire Line
+	3950 5950 3000 5950
+Wire Wire Line
+	3950 6050 3500 6050
+Wire Wire Line
+	3500 6050 3500 6100
+Wire Wire Line
+	3500 6100 3000 6100
+$Comp
+L power:GND #PWR?
+U 1 1 5CE38F69
+P 5650 6200
+F 0 "#PWR?" H 5650 5950 50  0001 C CNN
+F 1 "GND" H 5655 6027 50  0000 C CNN
+F 2 "" H 5650 6200 50  0001 C CNN
+F 3 "" H 5650 6200 50  0001 C CNN
+	1    5650 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5650 5800 5650
+Wire Wire Line
+	4750 5750 5500 5750
+Wire Wire Line
+	5500 5750 5500 5650
+Wire Wire Line
+	4750 5850 5650 5850
+Wire Wire Line
+	5650 5850 5650 6200
+Wire Wire Line
+	6100 5650 6300 5650
+Wire Wire Line
+	6600 5650 7000 5650
+NoConn ~ 4750 5950
+Wire Wire Line
+	3600 6450 5150 6450
+Connection ~ 5650 5850
+Wire Wire Line
+	6000 5850 6000 6450
+Wire Wire Line
+	5650 5850 6000 5850
+Wire Wire Line
+	6000 6450 7850 6450
+NoConn ~ 3850 7450
+NoConn ~ 3900 7400
+$Comp
+L SF17020F-0302-21R-L-015:SF17020F-0302-21R-L-015 S?
+U 1 1 5CE3FD96
+P 3950 6750
+F 0 "S?" H 4350 7015 50  0000 C CNN
+F 1 "SF17020F-0302-21R-L-015" H 4350 6924 50  0000 C CNN
+F 2 "SF17020F-0302-21R-L-015:SF17020F030221RL015" H 4600 6850 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/SF17020F-0302-21R-L-015.pdf" H 4600 6750 50  0001 L CNN
+F 4 "Pushbutton Switches 3PDT STOMP/FOOT SW LATCHING 1A9VDC 9PIN" H 4600 6650 50  0001 L CNN "Description"
+F 5 "41.2" H 4600 6550 50  0001 L CNN "Height"
+F 6 "107-SF17020F-32-21RL" H 4600 6450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=107-SF17020F-32-21RL" H 4600 6350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Alpha (Taiwan)" H 4600 6250 50  0001 L CNN "Manufacturer_Name"
+F 9 "SF17020F-0302-21R-L-015" H 4600 6150 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3950 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5CE3FDA0
+P 5950 6750
+F 0 "D?" H 5943 6966 50  0000 C CNN
+F 1 "LED" H 5943 6875 50  0000 C CNN
+F 2 "LEDs:LED_Rectangular_W3.0mm_H2.0mm" H 5950 6750 50  0001 C CNN
+F 3 "~" H 5950 6750 50  0001 C CNN
+	1    5950 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CE3FDAA
+P 6450 6750
+F 0 "R?" V 6243 6750 50  0000 C CNN
+F 1 "1k" V 6334 6750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6380 6750 50  0001 C CNN
+F 3 "~" H 6450 6750 50  0001 C CNN
+	1    6450 6750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 6850 3000 6850
+Wire Wire Line
+	3950 6750 3500 6750
+Wire Wire Line
+	3500 6750 3500 6700
+Wire Wire Line
+	3500 6700 3000 6700
+Wire Wire Line
+	3950 6950 3600 6950
+Wire Wire Line
+	3600 6950 3600 7550
+Wire Wire Line
+	5150 7550 5150 6750
+Wire Wire Line
+	5150 6750 4750 6750
+Wire Wire Line
+	3950 7050 3000 7050
+Wire Wire Line
+	3950 7150 3500 7150
+Wire Wire Line
+	3500 7150 3500 7200
+Wire Wire Line
+	3500 7200 3000 7200
+$Comp
+L power:GND #PWR?
+U 1 1 5CE3FDC0
+P 5650 7300
+F 0 "#PWR?" H 5650 7050 50  0001 C CNN
+F 1 "GND" H 5655 7127 50  0000 C CNN
+F 2 "" H 5650 7300 50  0001 C CNN
+F 3 "" H 5650 7300 50  0001 C CNN
+	1    5650 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6750 5800 6750
+Wire Wire Line
+	4750 6850 5500 6850
+Wire Wire Line
+	5500 6850 5500 6750
+Wire Wire Line
+	4750 6950 5650 6950
+Wire Wire Line
+	5650 6950 5650 7300
+Wire Wire Line
+	6100 6750 6300 6750
+Wire Wire Line
+	6600 6750 7000 6750
+NoConn ~ 4750 7050
+Wire Wire Line
+	3600 7550 5150 7550
+Connection ~ 5650 6950
+Wire Wire Line
+	6000 6950 6000 7550
+Wire Wire Line
+	5650 6950 6000 6950
+Wire Wire Line
+	6000 7550 7850 7550
+$EndSCHEMATC
